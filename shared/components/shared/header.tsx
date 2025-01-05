@@ -27,8 +27,6 @@ export const Header: React.FC<IProps> = ({
   const router = useRouter();
   const searchParams = useSearchParams();
 
-  const { data: session } = useSession();
-
   const [openAuthModal, setOpenAuthModal] = useState(false);
 
   useEffect(() => {
