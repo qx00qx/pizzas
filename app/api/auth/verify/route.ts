@@ -3,8 +3,7 @@ import { NextRequest, NextResponse } from 'next/server';
 
 export async function GET(req: NextRequest) {
   try {
-    const url = new URL(req.url);
-    const code = url.searchParams.get('code');
+    const code = req.nextUrl.searchParams.get('code'); 
     if (!code) {
       return NextResponse.json(
         { error: 'Missing code parameter' },
@@ -39,5 +38,6 @@ export async function GET(req: NextRequest) {
     return NextResponse.redirect(new URL('/?verified', req.url));
   } catch (error) {
     console.error('[VERIFY_GET]', error);
+    return NextResponse.json({ error: 'Internal server error' }, { status: 500 });
   }
 }
