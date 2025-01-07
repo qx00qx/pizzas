@@ -9,9 +9,11 @@
 ## Технологии
 
 - **Next.js**
+- **NextAuth**
 - **React.js**
 - **Tailwind CSS**
 - **Prisma ORM**
+- **PostgresSQL**
 - **React Hook Form**
 - **Zustand**
 - **Vercel**
