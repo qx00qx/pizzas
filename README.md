@@ -1,36 +1,58 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# 🍕 Pizza's - Сеть пиццерий
 
-## Getting Started
+**Pizza's** — это онлайн-платформа для заказа пиццы. На данный момент проект поддерживает только версию для ПК.
 
-First, run the development server:
+## Описание
+
+Проект представляет собой веб-приложение для онлайн-заказа пиццы. Пользователи могут просматривать меню, добавлять пиццы в корзину и оформлять заказы.
+
+## Технологии
+
+- **Next.js**
+- **React.js**
+- **Tailwind CSS**
+- **Prisma ORM**
+- **React Hook Form**
+- **Zustand**
+- **Vercel**
+
+## Функциональные возможности
+
+- Просмотр меню пицц
+- Добавление пицц в корзину
+- Интеграция с YooKassa
+- Авторизация/Регистрация пользователей
+- Отправка оповещений транзакций на почту
+- Оформление заказа (включая форму для ввода данных)
+
+## Установка и запуск
+
+### 1. Клонирование репозитория
+
+Сначала клонируйте репозиторий на ваш локальный компьютер:
+
+```bash
+git clone https://github.com/qx00qx/pizzas.git
+
+```
+
+### 2. Установка зависимостей
+
+Перейдите в папку с проектом и установите все зависимости:
+
+```bash
+cd pizzas
+npm install
+
+```
+
+### 3. Запуск локального сервера
+
+Для запуска проекта в режиме разработки выполните команду:
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+После этого приложение будет доступно по адресу: http://localhost:3000.
